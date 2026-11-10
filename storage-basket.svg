@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgST" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCF9F2" />
+      <stop offset="100%" stop-color="#EEE1CB" />
+    </linearGradient>
+    <pattern id="tightWeave" width="14" height="14" patternUnits="userSpaceOnUse">
+      <rect width="14" height="14" fill="#DDB275" />
+      <rect x="0" y="0" width="7" height="7" fill="#C89752" />
+      <rect x="7" y="7" width="7" height="7" fill="#BD8942" />
+      <line x1="0" y1="0" x2="14" y2="0" stroke="#87511D" stroke-width="0.8" />
+      <line x1="0" y1="7" x2="14" y2="7" stroke="#87511D" stroke-width="0.8" />
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#87511D" stroke-width="0.8" />
+      <line x1="7" y1="0" x2="7" y2="14" stroke="#87511D" stroke-width="0.8" />
+    </pattern>
+    <filter id="shadowST">
+      <feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#3A240E" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="400" fill="url(#bgST)" />
+
+  <!-- Shadow -->
+  <ellipse cx="250" cy="360" rx="150" ry="22" fill="#3D2914" opacity="0.25" filter="blur(6px)" />
+
+  <g filter="url(#shadowST)">
+    <!-- Main Cylinder Basket Body -->
+    <path d="M125 180 L140 335 C140 355 360 355 360 335 L375 180 Z" fill="url(#tightWeave)" stroke="#744111" stroke-width="3" />
+
+    <!-- Vertical Accent ribs -->
+    <g stroke="#91581F" stroke-width="2.5" opacity="0.7">
+      <line x1="165" y1="180" x2="175" y2="340" />
+      <line x1="205" y1="180" x2="212" y2="346" />
+      <line x1="250" y1="180" x2="250" y2="348" />
+      <line x1="295" y1="180" x2="288" y2="346" />
+      <line x1="335" y1="180" x2="325" y2="340" />
+    </g>
+
+    <!-- Mid Basket Ring Reinforcement -->
+    <path d="M133 260 Q250 285 367 260" fill="none" stroke="#5C310A" stroke-width="7" />
+    <path d="M133 260 Q250 285 367 260" fill="none" stroke="#FFCE79" stroke-width="3" stroke-dasharray="10 5" />
+
+    <!-- Basket Top Opening Rim -->
+    <ellipse cx="250" cy="180" rx="125" ry="25" fill="#5A2E0C" />
+
+    <!-- Fitting Bamboo Lid (Slightly tilted up to show it has a lid) -->
+    <g transform="translate(0, -25)">
+      <!-- Lid Dome -->
+      <path d="M110 160 C110 110 390 110 390 160 C390 185 110 185 110 160 Z" fill="url(#tightWeave)" stroke="#6C390B" stroke-width="3" />
+      
+      <!-- Lid Rim Edge -->
+      <ellipse cx="250" cy="165" rx="140" ry="24" fill="none" stroke="#522706" stroke-width="10" />
+      <ellipse cx="250" cy="165" rx="140" ry="24" fill="none" stroke="#FFE09B" stroke-width="5" stroke-dasharray="12 5" />
+
+      <!-- Top Hand Knob / Bamboo Loop Handle -->
+      <path d="M230 118 C230 88 270 88 270 118" fill="none" stroke="#462205" stroke-width="10" stroke-linecap="round" />
+      <path d="M230 118 C230 88 270 88 270 118" fill="none" stroke="#F4CA78" stroke-width="5" stroke-linecap="round" />
+      <!-- Knob base wrapping -->
+      <rect x="225" y="115" width="50" height="8" rx="3" fill="#6A3609" />
+    </g>
+  </g>
+</svg>

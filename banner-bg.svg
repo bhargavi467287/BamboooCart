@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 480" width="100%" height="100%" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B4332" />
+      <stop offset="60%" stop-color="#2D6A4F" />
+      <stop offset="100%" stop-color="#40916C" />
+    </linearGradient>
+    <linearGradient id="warmLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4A373" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#FFE0B2" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1400" height="480" fill="url(#heroGrad)" />
+  <rect width="1400" height="480" fill="url(#warmLight)" />
+
+  <!-- Stylized Bamboo Forest Background Silhouettes -->
+  <g opacity="0.18" fill="#D8F3DC">
+    <!-- Bamboo Stalks -->
+    <rect x="950" y="0" width="24" height="480" rx="8" />
+    <rect x="1040" y="0" width="18" height="480" rx="6" />
+    <rect x="1120" y="0" width="30" height="480" rx="10" />
+    <rect x="1220" y="0" width="22" height="480" rx="7" />
+    <rect x="1310" y="0" width="26" height="480" rx="8" />
+
+    <!-- Stalk segments rings -->
+    <line x1="940" y1="120" x2="980" y2="120" stroke="#FFFFFF" stroke-width="4" />
+    <line x1="940" y1="260" x2="980" y2="260" stroke="#FFFFFF" stroke-width="4" />
+    <line x1="940" y1="390" x2="980" y2="390" stroke="#FFFFFF" stroke-width="4" />
+
+    <line x1="1110" y1="140" x2="1160" y2="140" stroke="#FFFFFF" stroke-width="4" />
+    <line x1="1110" y1="290" x2="1160" y2="290" stroke="#FFFFFF" stroke-width="4" />
+  </g>
+
+  <!-- Bamboo Leaves Silhouettes -->
+  <g opacity="0.22" fill="#74C69D">
+    <path d="M1040 180 Q1120 140 1160 170 Q1100 200 1040 180 Z" />
+    <path d="M1120 140 Q1220 90 1260 130 Q1190 160 1120 140 Z" />
+    <path d="M1220 220 Q1310 180 1350 210 Q1280 240 1220 220 Z" />
+    <path d="M960 260 Q1040 220 1080 250 Q1020 280 960 260 Z" />
+  </g>
+
+  <!-- Organic Wave Divider Bottom -->
+  <path d="M0 480 L0 440 Q350 410 700 445 T1400 440 L1400 480 Z" fill="#FDFBF7" />
+</svg>

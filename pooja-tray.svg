@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgP" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCF9F2" />
+      <stop offset="100%" stop-color="#EDE0CC" />
+    </linearGradient>
+    <filter id="shadowP">
+      <feDropShadow dx="0" dy="14" stdDeviation="15" flood-color="#3A240E" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="400" fill="url(#bgP)" />
+
+  <!-- Shadow -->
+  <ellipse cx="250" cy="330" rx="180" ry="32" fill="#3D2914" opacity="0.25" filter="blur(8px)" />
+
+  <!-- Circular Bamboo Platter / Tray -->
+  <g filter="url(#shadowP)">
+    <!-- Base Plate -->
+    <ellipse cx="250" cy="220" rx="180" ry="90" fill="#E2B771" stroke="#783F0C" stroke-width="3" />
+
+    <!-- Concentric Starburst Bamboo Weave -->
+    <g stroke="#9F611E" stroke-width="1.8" opacity="0.7">
+      <ellipse cx="250" cy="220" rx="140" ry="70" fill="none" />
+      <ellipse cx="250" cy="220" rx="100" ry="50" fill="none" />
+      <ellipse cx="250" cy="220" rx="60" ry="30" fill="none" />
+      
+      <!-- Radial Spokes -->
+      <line x1="250" y1="130" x2="250" y2="310" />
+      <line x1="70" y1="220" x2="430" y2="220" />
+      <line x1="122" y1="156" x2="378" y2="284" />
+      <line x1="122" y1="284" x2="378" y2="156" />
+      <line x1="180" y1="136" x2="320" y2="304" />
+      <line x1="180" y1="304" x2="320" y2="136" />
+    </g>
+
+    <!-- Thick Bamboo Outer Rim -->
+    <ellipse cx="250" cy="220" rx="180" ry="90" fill="none" stroke="#5E2F09" stroke-width="12" />
+    <ellipse cx="250" cy="220" rx="180" ry="90" fill="none" stroke="#FFD88A" stroke-width="6" stroke-dasharray="14 6" />
+  </g>
+
+  <!-- Fresh Marigold & Jasmine Pooja Flowers -->
+  <g id="pooja-flowers">
+    <!-- Center Yellow Marigold (Banthipuvvu) -->
+    <circle cx="250" cy="220" r="22" fill="#F48C06" />
+    <circle cx="250" cy="220" r="16" fill="#FAA307" stroke="#DC2F02" stroke-width="2" stroke-dasharray="5 3" />
+    <circle cx="250" cy="220" r="8" fill="#FFBA08" />
+
+    <!-- Orange Marigold -->
+    <circle cx="295" cy="210" r="18" fill="#E85D04" />
+    <circle cx="295" cy="210" r="12" fill="#F48C06" stroke="#9D0208" stroke-width="2" stroke-dasharray="4 2" />
+
+    <!-- White Jasmine Petals Ring -->
+    <g fill="#FFFDF8" stroke="#E6D3A3" stroke-width="1">
+      <ellipse cx="205" cy="210" rx="10" ry="6" transform="rotate(20 205 210)" />
+      <ellipse cx="215" cy="235" rx="10" ry="6" transform="rotate(-30 215 235)" />
+      <ellipse cx="270" cy="245" rx="10" ry="6" transform="rotate(45 270 245)" />
+      <ellipse cx="240" cy="255" rx="10" ry="6" transform="rotate(-15 240 255)" />
+    </g>
+    <!-- Sacred Turmeric / Kumkum mini bowls -->
+    <circle cx="180" cy="215" r="14" fill="#D4A373" stroke="#8A4A15" stroke-width="2" />
+    <circle cx="180" cy="215" r="10" fill="#E63946" />
+    
+    <circle cx="320" cy="225" r="14" fill="#D4A373" stroke="#8A4A15" stroke-width="2" />
+    <circle cx="320" cy="225" r="10" fill="#FFB703" />
+  </g>
+</svg>

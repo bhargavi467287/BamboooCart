@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgH" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCF9F2" />
+      <stop offset="100%" stop-color="#ECE1CB" />
+    </linearGradient>
+    <filter id="shadowH">
+      <feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#3A240E" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="400" fill="url(#bgH)" />
+
+  <ellipse cx="250" cy="365" rx="170" ry="24" fill="#3D2914" opacity="0.28" filter="blur(7px)" />
+
+  <!-- Authentic Large Rural Bamboo Gampa -->
+  <g filter="url(#shadowH)">
+    <!-- Hemispherical Deep Body -->
+    <path d="M75 170 C70 340 430 340 425 170 Z" fill="#CA964D" stroke="#6E3A0E" stroke-width="3.5" />
+
+    <!-- Heavy Agricultural Cane Weave Lines -->
+    <g stroke="#8B4D16" stroke-width="3" opacity="0.75">
+      <path d="M85 210 Q250 260 415 210" fill="none" />
+      <path d="M102 250 Q250 300 398 250" fill="none" />
+      <path d="M130 290 Q250 335 370 290" fill="none" />
+
+      <!-- Radiating Sturdy Bamboo Splints -->
+      <path d="M90 180 Q140 280 200 335" fill="none" stroke-width="3.5" />
+      <path d="M140 175 Q180 270 230 338" fill="none" stroke-width="3.5" />
+      <path d="M200 172 L250 340" fill="none" stroke-width="3.5" />
+      <path d="M300 172 L250 340" fill="none" stroke-width="3.5" />
+      <path d="M360 175 Q320 270 270 338" fill="none" stroke-width="3.5" />
+      <path d="M410 180 Q360 280 300 335" fill="none" stroke-width="3.5" />
+    </g>
+
+    <!-- Extremely Thick Double-Rim Edge for Carrying Heavy Loads -->
+    <ellipse cx="250" cy="170" rx="175" ry="30" fill="none" stroke="#482205" stroke-width="16" />
+    <ellipse cx="250" cy="170" rx="175" ry="30" fill="none" stroke="#ECAE56" stroke-width="10" stroke-dasharray="16 8" />
+
+    <!-- Side Grip Ropes -->
+    <path d="M68 170 Q50 195 72 205" fill="none" stroke="#3A1C04" stroke-width="6" stroke-linecap="round" />
+    <path d="M432 170 Q450 195 428 205" fill="none" stroke="#3A1C04" stroke-width="6" stroke-linecap="round" />
+  </g>
+</svg>

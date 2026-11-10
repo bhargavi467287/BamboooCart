@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgF" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCF9F2" />
+      <stop offset="100%" stop-color="#EFE2CF" />
+    </linearGradient>
+    <linearGradient id="goldBamboo" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C68B45" />
+      <stop offset="50%" stop-color="#ECC686" />
+      <stop offset="100%" stop-color="#AA6C2A" />
+    </linearGradient>
+    <filter id="shadowF">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#3B2610" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="400" fill="url(#bgF)" />
+
+  <!-- Shadow -->
+  <ellipse cx="250" cy="358" rx="160" ry="22" fill="#3D2914" opacity="0.22" filter="blur(6px)" />
+
+  <!-- Tall Arched Bamboo Handle (Back section) -->
+  <path d="M125 210 C125 50 375 50 375 210" fill="none" stroke="#7A4312" stroke-width="14" stroke-linecap="round" />
+  <path d="M125 210 C125 50 375 50 375 210" fill="none" stroke="url(#goldBamboo)" stroke-width="10" stroke-linecap="round" />
+  <!-- Handle woven grips -->
+  <path d="M220 62 C230 60 270 60 280 62" fill="none" stroke="#4A2508" stroke-width="14" stroke-dasharray="6 4" />
+
+  <!-- Colorful Fresh Fruits in Basket -->
+  <!-- Mangoes -->
+  <path d="M180 185 Q195 130 240 155 Q245 190 200 205 Z" fill="#F4A261" stroke="#E76F51" stroke-width="2" />
+  <path d="M250 160 Q270 125 310 150 Q315 185 270 195 Z" fill="#E9C46A" stroke="#E76F51" stroke-width="2" />
+  <!-- Apple -->
+  <circle cx="240" cy="180" r="28" fill="#E63946" />
+  <path d="M240 152 Q245 140 252 142" stroke="#4A2508" stroke-width="3" fill="none" />
+  <!-- Bananas -->
+  <path d="M275 180 Q325 155 350 195 Q330 180 275 195 Z" fill="#F9C74F" stroke="#D4A373" stroke-width="2" />
+  <path d="M280 170 Q330 145 355 185 Q335 170 280 185 Z" fill="#FFE382" stroke="#D4A373" stroke-width="2" />
+
+  <!-- Basket Body -->
+  <g filter="url(#shadowF)">
+    <!-- Base Body -->
+    <path d="M100 205 C115 315 175 345 250 345 C325 345 385 315 400 205 Z" fill="#DDB26F" stroke="#8A4A15" stroke-width="3" />
+    
+    <!-- Open Diamond Cane Weave pattern -->
+    <g stroke="#97581B" stroke-width="2.5" opacity="0.65">
+      <line x1="120" y1="220" x2="230" y2="340" />
+      <line x1="150" y1="210" x2="270" y2="345" />
+      <line x1="190" y1="205" x2="310" y2="340" />
+      <line x1="240" y1="205" x2="345" y2="325" />
+      <line x1="290" y1="205" x2="380" y2="300" />
+
+      <line x1="380" y1="220" x2="270" y2="340" />
+      <line x1="350" y1="210" x2="230" y2="345" />
+      <line x1="310" y1="205" x2="190" y2="340" />
+      <line x1="260" y1="205" x2="155" y2="325" />
+      <line x1="210" y1="205" x2="120" y2="300" />
+    </g>
+
+    <!-- Top Rim -->
+    <ellipse cx="250" cy="205" rx="150" ry="24" fill="none" stroke="#7A3F11" stroke-width="12" />
+    <ellipse cx="250" cy="205" rx="150" ry="24" fill="none" stroke="#FFDF9E" stroke-width="7" stroke-dasharray="12 6" />
+
+    <!-- Cane handle joints -->
+    <rect x="117" y="195" width="16" height="24" rx="4" fill="#5A2E0C" />
+    <rect x="367" y="195" width="16" height="24" rx="4" fill="#5A2E0C" />
+  </g>
+</svg>

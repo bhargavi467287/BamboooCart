@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgR" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCF9F2" />
+      <stop offset="100%" stop-color="#EEE2CF" />
+    </linearGradient>
+    <filter id="shadowR">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#3A240E" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="400" fill="url(#bgR)" />
+
+  <!-- Shadow -->
+  <ellipse cx="250" cy="335" rx="160" ry="26" fill="#3D2914" opacity="0.25" filter="blur(7px)" />
+
+  <g filter="url(#shadowR)">
+    <!-- Shallow Roti Basket Bowl -->
+    <path d="M100 210 C100 320 400 320 400 210 Z" fill="#DEB06B" stroke="#7E4714" stroke-width="3" />
+
+    <!-- Weave texture bands -->
+    <g stroke="#97591E" stroke-width="2" opacity="0.7">
+      <path d="M110 235 Q250 265 390 235" fill="none" />
+      <path d="M130 265 Q250 295 370 265" fill="none" />
+      <path d="M165 290 Q250 315 335 290" fill="none" />
+      
+      <!-- Crossed Splints -->
+      <line x1="130" y1="215" x2="200" y2="310" />
+      <line x1="190" y1="210" x2="250" y2="320" />
+      <line x1="250" y1="210" x2="295" y2="315" />
+      <line x1="310" y1="210" x2="350" y2="290" />
+
+      <line x1="370" y1="215" x2="300" y2="310" />
+      <line x1="310" y1="210" x2="250" y2="320" />
+      <line x1="250" y1="210" x2="205" y2="315" />
+      <line x1="190" y1="210" x2="150" y2="290" />
+    </g>
+
+    <!-- Warm Cotton Cloth Liner (Traditional cloth keeps rotis soft and absorbs steam) -->
+    <path d="M115 210 C120 180 380 180 385 210 C380 250 120 250 115 210 Z" fill="#FFFBF2" stroke="#E6D3B3" stroke-width="2" />
+    <path d="M110 205 Q125 220 140 208 Q155 225 170 205 Q250 220 330 205 Q345 225 360 208 Q375 220 390 205" fill="none" stroke="#D85A5A" stroke-width="2.5" />
+
+    <!-- Warm Golden Rotis stacked inside -->
+    <ellipse cx="250" cy="205" rx="100" ry="32" fill="#E8C382" stroke="#B88636" stroke-width="1.5" />
+    <ellipse cx="250" cy="195" rx="98" ry="30" fill="#F0CD8D" stroke="#B88636" stroke-width="1.5" />
+    <circle cx="230" cy="192" r="3" fill="#8C5819" opacity="0.6" />
+    <circle cx="270" cy="196" r="4" fill="#8C5819" opacity="0.6" />
+    <circle cx="252" cy="190" r="2.5" fill="#8C5819" opacity="0.6" />
+
+    <!-- Basket Top Cane Rim -->
+    <ellipse cx="250" cy="210" rx="150" ry="26" fill="none" stroke="#60300A" stroke-width="10" />
+    <ellipse cx="250" cy="210" rx="150" ry="26" fill="none" stroke="#FFDE9A" stroke-width="5" stroke-dasharray="14 5" />
+  </g>
+</svg>

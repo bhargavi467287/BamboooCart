@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgTR" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBF7EE" />
+      <stop offset="100%" stop-color="#EBE0CC" />
+    </linearGradient>
+    <pattern id="herringbone" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#E5BD7D" />
+      <path d="M0 0 L10 10 L0 20 M10 0 L20 10 L10 20" fill="none" stroke="#B88034" stroke-width="2" />
+    </pattern>
+    <filter id="shadowTR">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#3A240E" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="400" fill="url(#bgTR)" />
+
+  <!-- Shadow -->
+  <ellipse cx="250" cy="310" rx="190" ry="35" fill="#3D2914" opacity="0.25" filter="blur(8px)" />
+
+  <!-- Tray Body in 3D Perspective -->
+  <g filter="url(#shadowTR)">
+    <!-- Base Woven Board -->
+    <polygon points="70,180 430,180 470,290 30,290" fill="url(#herringbone)" stroke="#7F4411" stroke-width="3" />
+
+    <!-- Side Wooden Bamboo Walls -->
+    <!-- Left Wall -->
+    <polygon points="30,290 70,180 60,170 18,278" fill="#8B4A15" stroke="#522706" stroke-width="2" />
+    <!-- Back Wall -->
+    <polygon points="60,170 440,170 430,180 70,180" fill="#66340B" stroke="#522706" stroke-width="2" />
+    <!-- Right Wall -->
+    <polygon points="440,170 482,278 470,290 430,180" fill="#A85D1E" stroke="#522706" stroke-width="2" />
+    <!-- Front Wall -->
+    <polygon points="18,278 482,278 470,295 30,295" fill="#B96D26" stroke="#522706" stroke-width="2" />
+
+    <!-- Tray Handles Cut-out / Bamboo Rods -->
+    <rect x="25" y="215" width="28" height="12" rx="6" fill="#3A1C04" />
+    <rect x="447" y="215" width="28" height="12" rx="6" fill="#3A1C04" />
+
+    <!-- Corner Joint Bindings -->
+    <g stroke="#F8CF88" stroke-width="3">
+      <line x1="20" y1="280" x2="32" y2="292" />
+      <line x1="480" y1="280" x2="468" y2="292" />
+    </g>
+  </g>
+
+  <!-- Traditional Chai Glass & Clay Cup on Tray -->
+  <g transform="translate(180, 165)">
+    <!-- Terracotta Cup -->
+    <path d="M40 50 L46 90 C46 95 74 95 74 90 L80 50 Z" fill="#B3542E" stroke="#7A3011" stroke-width="2" />
+    <ellipse cx="60" cy="50" rx="20" ry="7" fill="#6E2308" />
+    <!-- Steaming Hot Tea Aroma -->
+    <path d="M55 40 Q50 25 55 15" stroke="#D3A588" stroke-width="2" fill="none" opacity="0.6" stroke-linecap="round" />
+    <path d="M65 38 Q70 23 65 12" stroke="#D3A588" stroke-width="2" fill="none" opacity="0.6" stroke-linecap="round" />
+  </g>
+</svg>

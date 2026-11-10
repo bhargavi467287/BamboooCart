@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCF9F2" />
+      <stop offset="100%" stop-color="#EFE4D2" />
+    </linearGradient>
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A56226" />
+      <stop offset="50%" stop-color="#D99B58" />
+      <stop offset="100%" stop-color="#6F390E" />
+    </linearGradient>
+    <pattern id="sieveMesh" width="8" height="8" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#FBF3E3" />
+      <line x1="0" y1="0" x2="8" y2="0" stroke="#C89656" stroke-width="1.2" />
+      <line x1="0" y1="0" x2="0" y2="8" stroke="#C89656" stroke-width="1.2" />
+    </pattern>
+    <filter id="shadowS">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#3A240E" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="400" fill="url(#bgS)" />
+
+  <!-- Shadow -->
+  <ellipse cx="250" cy="340" rx="170" ry="30" fill="#3D2914" opacity="0.25" filter="blur(8px)" />
+
+  <!-- Bamboo Sieve Cylinder & Fine Mesh -->
+  <g filter="url(#shadowS)">
+    <!-- Lower cylindrical bentwood bamboo ring -->
+    <path d="M90 220 C90 280 410 280 410 220 L410 250 C410 310 90 310 90 250 Z" fill="#753C11" stroke="#4A2508" stroke-width="2" />
+    
+    <!-- Ultra fine woven sieve base (Seen through angle) -->
+    <ellipse cx="250" cy="220" rx="160" ry="70" fill="url(#sieveMesh)" stroke="#B37837" stroke-width="3" />
+
+    <!-- Upper deep circular bamboo rim -->
+    <path d="M90 190 C90 130 410 130 410 190 L410 220 C410 280 90 280 90 220 Z" fill="url(#rimGrad)" stroke="#4A2508" stroke-width="2" />
+
+    <!-- Rim binding stitches / cane ties -->
+    <g stroke="#3D1D05" stroke-width="3" opacity="0.8">
+      <line x1="120" y1="185" x2="120" y2="225" />
+      <line x1="180" y1="210" x2="180" y2="245" />
+      <line x1="250" y1="220" x2="250" y2="255" />
+      <line x1="320" y1="210" x2="320" y2="245" />
+      <line x1="380" y1="185" x2="380" y2="225" />
+    </g>
+
+    <!-- Top lip highlight -->
+    <ellipse cx="250" cy="190" rx="160" ry="60" fill="none" stroke="#FFE7B0" stroke-width="6" stroke-dasharray="16 6" />
+    <ellipse cx="250" cy="190" rx="160" ry="60" fill="none" stroke="#522706" stroke-width="3" />
+  </g>
+
+  <!-- Traditional Flour Sifting Accent -->
+  <g opacity="0.7">
+    <circle cx="230" cy="210" r="30" fill="#FFFDF8" opacity="0.6" filter="blur(8px)" />
+    <circle cx="270" cy="225" r="25" fill="#FFFDF8" opacity="0.6" filter="blur(6px)" />
+  </g>
+</svg>

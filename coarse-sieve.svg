@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FCF9F2" />
+      <stop offset="100%" stop-color="#EEE2CE" />
+    </linearGradient>
+    <pattern id="hexMesh" width="16" height="16" patternUnits="userSpaceOnUse">
+      <rect width="16" height="16" fill="#F8EED9" />
+      <polygon points="8,0 16,4 16,12 8,16 0,12 0,4" fill="none" stroke="#B8803E" stroke-width="1.8" />
+    </pattern>
+    <filter id="shadowCS">
+      <feDropShadow dx="0" dy="12" stdDeviation="15" flood-color="#3A240E" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="500" height="400" fill="url(#bgCS)" />
+  <ellipse cx="250" cy="340" rx="160" ry="28" fill="#3D2914" opacity="0.25" filter="blur(7px)" />
+  <g filter="url(#shadowCS)">
+    <path d="M90 200 C90 270 410 270 410 200 L410 230 C410 300 90 300 90 230 Z" fill="#8B4D16" stroke="#4A2508" stroke-width="2" />
+    <ellipse cx="250" cy="200" rx="160" ry="65" fill="url(#hexMesh)" stroke="#B37837" stroke-width="3" />
+    <path d="M90 180 C90 110 410 110 410 180 L410 200 C410 270 90 270 90 200 Z" fill="#A86326" stroke="#4A2508" stroke-width="2" />
+    <ellipse cx="250" cy="180" rx="160" ry="55" fill="none" stroke="#522706" stroke-width="12" />
+    <ellipse cx="250" cy="180" rx="160" ry="55" fill="none" stroke="#FFE7B0" stroke-width="6" stroke-dasharray="16 6" />
+  </g>
+</svg>

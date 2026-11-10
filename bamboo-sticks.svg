@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSTK" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBF7EF" />
+      <stop offset="100%" stop-color="#EBE0CC" />
+    </linearGradient>
+    <linearGradient id="stick1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8DA765" />
+      <stop offset="50%" stop-color="#B8D588" />
+      <stop offset="100%" stop-color="#6F8847" />
+    </linearGradient>
+    <linearGradient id="stick2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CCA261" />
+      <stop offset="50%" stop-color="#F3D194" />
+      <stop offset="100%" stop-color="#AC803E" />
+    </linearGradient>
+    <filter id="shadowSTK">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#3A240E" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="500" height="400" fill="url(#bgSTK)" />
+
+  <!-- Shadow -->
+  <ellipse cx="250" cy="350" rx="170" ry="24" fill="#3D2914" opacity="0.25" filter="blur(7px)" />
+
+  <!-- Bundle of Seasoned Bamboo Poles & Craft Sticks -->
+  <g filter="url(#shadowSTK)" transform="rotate(-25 250 200)">
+    <!-- Stick 1 (Golden) -->
+    <rect x="180" y="30" width="18" height="340" rx="9" fill="url(#stick2)" stroke="#7F561D" stroke-width="2" />
+    <line x1="178" y1="100" x2="200" y2="100" stroke="#5E3B09" stroke-width="4" stroke-linecap="round"/>
+    <line x1="178" y1="210" x2="200" y2="210" stroke="#5E3B09" stroke-width="4" stroke-linecap="round"/>
+    <line x1="178" y1="300" x2="200" y2="300" stroke="#5E3B09" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Stick 2 (Fresh Green) -->
+    <rect x="202" y="10" width="22" height="370" rx="11" fill="url(#stick1)" stroke="#4A6529" stroke-width="2" />
+    <line x1="200" y1="80" x2="226" y2="80" stroke="#2B4013" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="200" y1="180" x2="226" y2="180" stroke="#2B4013" stroke-width="4.5" stroke-linecap="round"/>
+    <line x1="200" y1="280" x2="226" y2="280" stroke="#2B4013" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Stick 3 (Golden Yellow) -->
+    <rect x="228" y="25" width="20" height="350" rx="10" fill="url(#stick2)" stroke="#7F561D" stroke-width="2" />
+    <line x1="226" y1="120" x2="250" y2="120" stroke="#5E3B09" stroke-width="4" stroke-linecap="round"/>
+    <line x1="226" y1="230" x2="250" y2="230" stroke="#5E3B09" stroke-width="4" stroke-linecap="round"/>
+    <line x1="226" y1="320" x2="250" y2="320" stroke="#5E3B09" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Stick 4 (Green) -->
+    <rect x="252" y="15" width="19" height="365" rx="9.5" fill="url(#stick1)" stroke="#4A6529" stroke-width="2" />
+    <line x1="250" y1="90" x2="273" y2="90" stroke="#2B4013" stroke-width="4" stroke-linecap="round"/>
+    <line x1="250" y1="200" x2="273" y2="200" stroke="#2B4013" stroke-width="4" stroke-linecap="round"/>
+    <line x1="250" y1="295" x2="273" y2="295" stroke="#2B4013" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Stick 5 (Golden) -->
+    <rect x="275" y="40" width="16" height="330" rx="8" fill="url(#stick2)" stroke="#7F561D" stroke-width="2" />
+    <line x1="273" y1="140" x2="293" y2="140" stroke="#5E3B09" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="273" y1="240" x2="293" y2="240" stroke="#5E3B09" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Jute Coir Rope Bundle Bindings -->
+    <g stroke="#916B38" stroke-width="12" stroke-linecap="round">
+      <line x1="175" y1="150" x2="295" y2="150" />
+      <line x1="175" y1="260" x2="295" y2="260" />
+    </g>
+    <!-- Rope texture details -->
+    <g stroke="#D4A373" stroke-width="3" stroke-dasharray="5 3">
+      <line x1="175" y1="150" x2="295" y2="150" />
+      <line x1="175" y1="260" x2="295" y2="260" />
+    </g>
+  </g>
+
+  <!-- Decorative Green Bamboo Foliage -->
+  <g transform="translate(380, 50)">
+    <path d="M0 0 Q40 -20 60 0 Q30 20 0 0 Z" fill="#52B788" />
+    <path d="M0 10 Q50 0 70 30 Q30 35 0 10 Z" fill="#2D6A4F" />
+    <path d="M-10 20 Q30 20 50 50 Q10 45 -10 20 Z" fill="#74C69D" />
+  </g>
+</svg>
